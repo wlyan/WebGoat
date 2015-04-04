@@ -111,7 +111,7 @@ public class Plugin {
         if (Files.exists(pluginDirectory.resolve(NAME_LESSON_I18N_DIRECTORY))) {
             return pluginDirectory.resolve(NAME_LESSON_I18N_DIRECTORY);
         } else {
-            return Files.createDirectory(pluginDirectory.resolve(NAME_LESSON_I18N_DIRECTORY));
+            return Files.createDirectories(pluginDirectory.resolve(NAME_LESSON_I18N_DIRECTORY));
         }
     }
 
